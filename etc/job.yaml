@@ -1,0 +1,10 @@
+Name: Job
+Host: 0.0.0.0
+Port: 8888
+
+
+XxlJobConf:
+  ServerAddr: "http://127.0.0.1:8080/xxl-job-admin"
+  AccessToken: "default_token"
+  RegistryKey: "golang-jobs"
+  Port: "8888"  # 同上 Port 端口一致
