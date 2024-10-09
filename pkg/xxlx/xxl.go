@@ -6,6 +6,8 @@
 package xxlx
 
 import (
+	"fmt"
+
 	xxl "github.com/xxl-job/xxl-job-executor-go"
 )
 
@@ -43,5 +45,6 @@ func NewXxlExecutor(c XxlJobConf) Executor {
 func (e *Executor) RegTasks(tasks []Task) {
 	for _, task := range tasks {
 		e.RegTask(task.Pattern, task.TaskFn)
+		fmt.Printf("register task: %s \n", task.Pattern)
 	}
 }
