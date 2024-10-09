@@ -10,19 +10,20 @@ import (
 	"github.com/ch3nnn/xxl-job-zero/pkg/xxlx"
 )
 
+// RegisterTasks 注册任务
 func RegisterTasks(exec xxlx.Executor) {
 	exec.RegTasks(
 		[]xxlx.Task{
 			{
-				Pattern: "task.test",
-				TaskFn:  task.Test,
+				Pattern: "task.demo1",
+				TaskFn:  task.Test1,
 			},
 			{
-				Pattern: "task.test2",
+				Pattern: "task.demo2",
 				TaskFn:  task.Test2,
 			},
 			{
-				Pattern: "task.panic",
+				Pattern: "task.demo3",
 				TaskFn:  task.Panic,
 			},
 		},

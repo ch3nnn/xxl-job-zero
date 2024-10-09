@@ -23,7 +23,7 @@ http://127.0.0.1:8888
 任务管理->新增(注意，使用BEAN模式，`JobHandler`与`RegTask`名称一致)
 
 ```
-1	测试panic	BEAN：task.panic	* 0 * * * ?	admin	STOP	
-2	测试耗时任务	BEAN：task.test2	* * * * * ?	admin	STOP	
-3	测试golang	BEAN：task.test		* * * * * ?	admin	STOP
+1	测试panic	BEAN：task.demo3	* 0 * * * ?	admin	STOP	
+2	测试耗时任务	BEAN：task.demo2	* * * * * ?	admin	STOP	
+3	测试golang	BEAN：task.demo1	* * * * * ?	admin	STOP
 ```
