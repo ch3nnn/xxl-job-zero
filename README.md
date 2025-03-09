@@ -1,6 +1,40 @@
 # xxl-job-zero
 > 与 go-zero 框架集成
 
+## 目录结构
+```shell
+./
+├── LICENSE
+├── README.md
+├── deploy  // 部署相关
+│   ├── docker-compose.yml
+│   └── tables_xxl_job.sql
+├── etc // 配置文件
+│   └── job.yaml
+├── go.mod
+├── go.sum
+├── internal 
+│   ├── config  
+│   │   └── config.go
+│   ├── handler 
+│   │   └── routes.go  // xxl-job-admin http交互 
+│   ├── svc
+│   │   ├── regtask.go  // 注册任务
+│   │   └── servicecontext.go 
+│   └── task  // 定时任务
+│       ├── demo1.go
+│       ├── demo2.go
+│       └── demo3.go
+├── job.go  // 主函数
+├── makefile
+└── pkg
+    └── xxlx
+        ├── log.go
+        └── xxl.go
+
+
+```
+
 ## xxl-job-admin 配置
 
 ### 1. 添加执行器
